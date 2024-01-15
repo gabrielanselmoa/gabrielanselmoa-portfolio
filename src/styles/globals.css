@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap');
+
+
+/* ROOT */
+:root{
+    --clr-white: white;
+    --clr-purple: #25216c;
+    --clr-black: black;
+}
+
+/* GENERAL SETUPS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    min-height: 10px;
+    background-color: var(--clr-black);
+}
+
+::selection {
+    color: var(--clr-white);
+    background: var(--clr-purple);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 600;
+    background-color: var(--clr-purple);
+    color: #000;
+    /* animation-name: initialMotion;
+    animation-iteration-count: initial; */
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    transition: all .3s ease-in-out;
+    border: #000;
+}
+input::placeholder, textarea::placeholder{
+    color: #000;
+    opacity: 0.8;
+    font-size: 14px;
+    text-align: left;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    box-shadow: 5px 5px 0px 0px var(--clr-purple);
+    border: 1px solid var(--clr-black);
+    border-radius: 8px; /*Here*/
+    background-color: var(--clr-white);
+}
+
+/* GENERAL CLASSES */
+.flexbox-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flexbox-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    border: 0.5px solid rgb(0, 0, 0);
+}
+.shadow{
+    /* box-shadow: 5px 5px 0px 0px #000000cc; */
+    box-shadow: 5px 5px 0px 0px var(--clr-purple);
+}
+.radius{
+    border-radius: 8px;
+}
+.transition-default{
+    transition: all .3s ease-in-out;
+}
+.font-title{
+    font-size: 65px;
+    font-weight: bold;
+}
+.font-p{
+    font-size: 20px;
+}
+
+/* ANIMATIONS */
+@keyframes initialMotion {
+    0%{
+        transition: all .3s ease-in-out;
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes beforeMotion {
+    0%{
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        transform: translateX(-100px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* BLOCKS */
+.side-bar{
+    position: fixed;
+    margin: 0 auto;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    z-index: 100;
+
+    background-color: var(--clr-purple);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px 0px var(--clr-purple);
+    color: var(--clr-white);
+
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    transition: width 1s;
+
+    padding: 2rem .5rem;
+}
+
+.side-bar ul li{
+    padding: .75rem 2rem;
+    border-radius: 8px;
+}
+
+.side-bar ul li:hover{
+    background-color: var(--clr-purple);
+    color: var(--clr-white);
+    box-shadow: 5px 5px 0px 0px var(--clr-purple);}
+
+/* BUTTON COMPONENT */
+.btn{
+    background-color: transparent;
+    color: var(--clr-black);
+    font-weight: 600;
+    border: 1px solid var(--clr-black);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact-me{
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+/* SKILLS BLOCK */
+.skill-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    padding: 1rem 1.25rem;
+    background-color: transparent;
+    color: var(--clr-black);
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 2px 3px 0px 0px var(--clr-purple);
+    border: 1px solid var(--clr-black);
+}
+
+/* CARD */
+
+input[type='radio']{
+    display: none;
+}
+
+.accordion .content{
+    max-height: 0;
+    transition: all .5s;
+}
+
+input[type='radio']:checked + label + .content{
+    max-height: 500px;
+    padding-left: 10px;
+}
+
+.accordion input[type='radio']:checked + label span{
+    transform: rotate(-90deg);
+
+}
