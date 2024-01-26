@@ -8,7 +8,7 @@ const Footer = () => {
       <section
         className="container flexbox-row justify-between
         max-[375px]:flex-col max-[375px]:text-center max-[375px]:text-[10px] max-[375px]:gap-2
-        max-[425px]:text-[10px] max-[425px]:gap-1 max-[425px]:flex-col
+        max-[425px]:text-[12px] max-[425px]:gap-1 max-[425px]:flex-col
         max-[520px]:text-[10px]
         max-[768px]:text-sm max-[768px]:gap-2
         "

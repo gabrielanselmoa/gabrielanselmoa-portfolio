@@ -6,12 +6,13 @@ type Props = {
   name?: string,
   href: string,
   className?: string,
-  icon?: any
+  icon?: any,
+  target?: string
 }
 
-const Button = ({name, href, className, icon}:Props) => {
+const Button = ({name, href, target, className, icon}:Props) => {
   return (
-    <Link href={href}>
+    <Link href={href} target={target}>
         <button className={`btn radius text-[11px] py-3 px-3 ${className}
         sm:text-[14px] sm:py-4 sm:px-4
         md:text-[13px] lg:text-md

@@ -48,12 +48,13 @@ const Portfolio = () => {
           </p>
           <div className="flexbox-row gap-2">
             <Button
-              href="/"
+              href=""
               className="hover:bg-black hover:text-white transition-default"
               icon={<FaEye size={20} />}
             />
             <Button
-              href="/"
+              href="https://github.com/gabrielanselmoa"
+              target="_blank"
               className="hover:bg-black hover:text-white transition-default"
               icon={<FaGithub size={20} />}
             />
@@ -93,7 +94,8 @@ const Portfolio = () => {
                 icon={<FaEye size={20} />}
               />
               <Button
-                href="/"
+                href="https://github.com/gabrielanselmoa"
+                target="_blank"
                 className="hover:bg-black hover:text-white transition-default"
                 icon={<FaGithub size={20} />}
               />
@@ -132,7 +134,8 @@ const Portfolio = () => {
                 icon={<FaEye size={20} />}
               />
               <Button
-                href="/"
+                href="https://github.com/gabrielanselmoa"
+                target="_blank"
                 className="hover:bg-black hover:text-white transition-default"
                 icon={<FaGithub size={20} />}
               />
@@ -173,7 +176,8 @@ const Portfolio = () => {
               icon={<FaEye size={20} />}
             />
             <Button
-              href="/"
+              href="https://github.com/gabrielanselmoa"
+              target="_blank"
               className="hover:bg-black hover:text-white transition-default"
               icon={<FaGithub size={20} />}
             />
@@ -181,19 +185,6 @@ const Portfolio = () => {
         </span>
       </article>
     </section>
-    // <div>
-    //     <span>
-    //         <Image src={imgSrc} alt={imgAlt} width={0} height={0}/>
-    //     </span>
-
-    //     <h2>{title}</h2>
-    //     <p>{description}</p>
-
-    //     <span>
-    //         <Button name="View" href="/"/>
-    //         <Button name="Repository" href="/"/>
-    //     </span>
-    // </div>
   );
 };
 export default Portfolio;
