@@ -16,7 +16,7 @@ const Academic = () => {
 
   return (
     <section className="sm:w-4/5 sm:m-auto lg:w-3/5 xl:w-1/2 pt-6">
-        <h2 className="text-center text-[#25216c] text-xl">../Academic-Education</h2>
+        <h2 className="text-center text-[#25216c] text-xl">../Education</h2>
           <ul className="accordion flexbox-col gap-6 my-8 w-full">
 
             <li className="container list-none w-full p-3 transition-default hover:bg-black hover:text-white">

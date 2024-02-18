@@ -25,8 +25,9 @@ const Portfolio = () => {
     lg:flex-row lg:p-0 lg:gap-0 lg:max-w-none xl:w-4/5"
       >
         <Link
-          href="/"
+          href="https://github.com/gabrielanselmoa?tab=repositories"
           className="w-full overflow-hidden z-1 hover:opacity-80 hover:bg-[#25216c] transition-default border rounded-t-md lg:rounded-none lg:rounded-tl-md lg:rounded-bl-md"
+          target="_blank"
         >
           <Image
             src={Soon}
@@ -70,8 +71,9 @@ const Portfolio = () => {
       "
         >
           <Link
-            href="/"
+            href="https://github.com/gabrielanselmoa?tab=repositories"
             className="w-full overflow-hidden z-1 hover:opacity-80 hover:bg-red-950 transition-default border rounded-t-md"
+            target="_blank"
           >
             <Image
               src={Soon}
@@ -84,8 +86,8 @@ const Portfolio = () => {
             <h4 className="text-sm text-[#25216c] mb-2">Featured Project</h4>
             <h2 className="text-xl mb-2">Building Applications...</h2>
             <p className="text-sm font-normal italic mb-4 flex flex-row items-center gap-2">
-              Applications with React.js, Next.js, Typescript, Tailwind and UI
-              Libs to improve and test my Front-End Skills
+              Applications with Java, Spring, PostgreSQL, Hibernate and so on..
+              As soon as I finish it, I'll post here
             </p>
             <div className="flexbox-row gap-2">
               <Button
@@ -110,8 +112,9 @@ const Portfolio = () => {
       "
         >
           <Link
-            href="/"
+            href="https://github.com/gabrielanselmoa?tab=repositories"
             className="w-full overflow-hidden z-1 hover:opacity-80 hover:bg-red-950 transition-default border rounded-t-md"
+            target="_blank"
           >
             <Image
               src={Soon}
@@ -124,8 +127,8 @@ const Portfolio = () => {
             <h4 className="text-sm text-[#25216c] mb-2">Featured Project</h4>
             <h2 className="text-xl mb-2">Building Applications...</h2>
             <p className="text-sm font-normal italic mb-4 flex flex-row items-center gap-2">
-              Applications with React.js, Next.js, Typescript, Tailwind and UI
-              Libs to improve and test my Front-End Skills
+              Applications with Java, Spring, PostgreSQL, Hibernate and so on...
+              As soon as I finish it, I'll post here
             </p>
             <div className="flexbox-row gap-2">
               <Button
@@ -150,8 +153,9 @@ const Portfolio = () => {
     lg:flex-row lg:p-0 lg:gap-0 lg:max-w-none xl:w-4/5"
       >
         <Link
-          href="/"
+          href="https://github.com/gabrielanselmoa?tab=repositories"
           className="w-full overflow-hidden z-1 hover:opacity-80 hover:bg-red-950 transition-default border rounded-t-md lg:rounded-none lg:rounded-tl-md lg:rounded-bl-md"
+          target="_blank"
         >
           <Image
             src={Soon}
